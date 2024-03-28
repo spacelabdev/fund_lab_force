@@ -12,8 +12,12 @@
     gap: 2rem;
 }
 
-.Navbar > ul > li:first-child {
+.Navbar li:first-child {
     margin-right: auto;
+}
+
+.Navbar img {
+    height: 3rem;
 }
 
 .Navbar > ul > li {

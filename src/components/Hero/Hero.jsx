@@ -15,9 +15,12 @@ export default function Hero() {
                     <p>
                         To help us grow these opportunities, please consider making a tax-deductible donation to SpaceLab today.
                     </p>
-                    
                 </div>
+                    <p className='construction-note'>
+                        🚧 Website is under construction... please stay tuned for more! 🚧
+                    </p>
             </div>
+            
         </section>
     )
 }

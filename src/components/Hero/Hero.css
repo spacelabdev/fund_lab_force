@@ -25,6 +25,9 @@
     color: gray;
 }
 
-.Hero .hero-content p {
-
+.Hero .construction-note {
+    padding-top: 2rem;
+    /* color: rgb(192, 130, 251); */
+    color: rgba(255, 200, 0, 0.617);
+    font-weight: 300;
 }
