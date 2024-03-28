@@ -20,7 +20,9 @@ export default function Hero() {
                         🚧 Website is under construction... please stay tuned for more! 🚧
                     </p>
             </div>
-            
         </section>
     )
 }
+
+// Fix spacing around Hero on small screen sizes
+// Add picture(s)

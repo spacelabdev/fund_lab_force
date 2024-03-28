@@ -14,3 +14,7 @@ export default function MobileNav() {
         </nav>
     )
 }
+
+// Animated hamburger
+// Dropdown to menu from hamburger
+// Disappear on scroll

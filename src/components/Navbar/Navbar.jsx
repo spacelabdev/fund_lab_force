@@ -14,3 +14,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+// Disappear on scroll

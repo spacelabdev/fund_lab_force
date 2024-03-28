@@ -21,7 +21,9 @@ function App() {
       {isMobile ? <MobileNav /> : <Navbar />}
       <Homepage />
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
+
+// Make sections default 100vh
