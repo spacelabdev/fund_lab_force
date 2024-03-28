@@ -1,0 +1,30 @@
+.MobileNav {
+    background-color: rgba(255, 0, 0, 0.275);
+    width: 100%;
+}
+
+.MobileNav > ul {
+    height: 3rem;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.MobileNav li:first-child {
+    margin-right: auto;
+}
+
+.MobileNav .logo {
+    height: 3rem;
+}
+
+.MobileNav > ul > li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.MobileNav > ul > li:hover {
+    color: blueviolet;
+}
