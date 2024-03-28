@@ -1,0 +1,26 @@
+.Navbar {
+    width: 100%;
+    /* border-bottom: 1px solid rgb(41, 41, 41); */
+}
+
+.Navbar > ul {
+    height: 3rem;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Navbar > ul > li:first-child {
+    margin-right: auto;
+}
+
+.Navbar > ul > li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.Navbar > ul > li:hover {
+    color: blueviolet;
+}
