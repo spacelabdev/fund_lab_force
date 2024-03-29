@@ -26,3 +26,4 @@ export default function Hero() {
 
 // Fix spacing around Hero on small screen sizes
 // Add picture(s)
+// Change h1 line height or font size for mobile

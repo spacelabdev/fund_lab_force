@@ -1,32 +1,35 @@
 .Hero {
-    height: 70vh;
+    margin-top: -3rem;
+    height: 90vh;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 2rem;
-    background-image: linear-gradient(to bottom, rgba(31, 0, 44, 0.921), rgba(31, 0, 44, 0));
+    background-image: linear-gradient(to bottom, rgba(57, 0, 82, 0.921), rgba(31, 0, 44, 0));
 }
 
 .Hero .hero-content {
-    width: 70%;
-    height: 60%;
+    width: 60ch;
+    /* border: 1px solid lime; */
 }
 
 .Hero .hero-content h1 {
-    font-size: 4rem;
+    padding-top: 3rem;
+    font-size: clamp(3rem, 1.75rem + 4vw, 4rem);
 }
 
 .Hero .hero-content .hero-p-div {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    font-size: .95rem;
+    font-size: clamp(0.95rem, 1.307rem + -0.952vw, 0.45rem);
     font-weight: 300;
-    color: gray;
+    color: lightgrey;
+    text-wrap: pretty;
 }
 
 .Hero .construction-note {
     padding-top: 2rem;
-    /* color: rgb(192, 130, 251); */
-    color: rgba(255, 200, 0, 0.617);
+    color: rgba(255, 200, 0, 0.75);
     font-weight: 300;
 }
