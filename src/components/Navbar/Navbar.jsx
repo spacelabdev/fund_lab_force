@@ -53,7 +53,3 @@ export default function Navbar() {
         </motion.nav>
     )
 }
-
-// Animated hamburger
-// Dropdown to menu from hamburger
-// Disappear on scroll
