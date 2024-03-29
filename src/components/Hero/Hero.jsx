@@ -23,6 +23,3 @@ export default function Hero() {
         </section>
     )
 }
-
-// Fix spacing around Hero on small screen sizes
-// Add picture(s)
