@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Homepage from './pages/Homepage/Homepage';
+import Footer from './components/Footer/Footer';
 import './App.css';
 import MobileNav from './components/MobileNav/MobileNav';
 
@@ -20,6 +21,7 @@ function App() {
     <main className='App'>
       {isMobile ? <MobileNav /> : <Navbar />}
       <Homepage />
+      <Footer />
     </main>
   )
 }
