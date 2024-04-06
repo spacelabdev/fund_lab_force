@@ -1,0 +1,98 @@
+.Navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.Navbar .nav-logo {
+    height: 3rem;
+    padding-inline: 2rem;
+}
+
+.Navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.Navbar li {
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    padding-inline: 1rem;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
+}
+
+.Navbar li:hover {
+    background-color: rgba(72, 72, 72, 0.5);
+    transition: background-color 400ms ease-in-out;
+}
+
+.Navbar a {
+    color: white;
+}
+
+.Navbar .hamburger {
+    position: absolute;
+    top: .85rem; /* why is the middle not .75rem? */
+    right: 2rem;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.Navbar .hamburger:hover .bar {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.Navbar .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 100px;
+}
+
+@media (max-width: 760px) {
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Navbar .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .Navbar .nav-links.active {
+        display: flex;
+    }
+
+    .Navbar ul {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .Navbar li {
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+    }
+
+    .Navbar .hamburger {
+        display: flex;
+    }
+
+}

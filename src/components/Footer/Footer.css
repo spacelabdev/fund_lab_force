@@ -1,0 +1,24 @@
+footer {
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+    width: 100%;
+    background-color: #000; 
+    color: rgba(228, 228, 228, 1);
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.social-links {
+    margin-bottom: .5rem; /* spacing between social links and copyright */
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8); /* icon color */
+    margin: 0 15px; /* spacing between icons */
+    font-size: .75rem;
+}
+
+.copyright {
+    font-size: 1rem;
+}
