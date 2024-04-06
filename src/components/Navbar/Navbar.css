@@ -19,7 +19,6 @@
     justify-content: flex-end;
     align-items: center;
     padding-inline: 1rem;
-    /* gap: 2rem; */
 }
 
 .Navbar li {
@@ -35,6 +34,10 @@
 .Navbar li:hover {
     background-color: rgba(72, 72, 72, 0.5);
     transition: background-color 400ms ease-in-out;
+}
+
+.Navbar a {
+    color: white;
 }
 
 .Navbar .hamburger {

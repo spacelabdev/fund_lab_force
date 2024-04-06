@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import Logo from "../../../public/assets/spacelab.svg"
 import './Navbar.css'
@@ -47,7 +48,15 @@ export default function Navbar() {
             <div className={active ? 'nav-links active' : 'nav-links'}>
                 <ul>
                     <li>About</li>
-                    <li>Donate</li>
+                    <li>
+                        <Link 
+                            className={'nav-link'} 
+                            to={'https://www.paypal.com/donate/?hosted_button_id=PK9D4A3HEWV8C'} 
+                            style={{textDecoration: 'none'}}
+                        >
+								Donate
+						</Link>
+                    </li>
                 </ul>
             </div>
         </motion.nav>
