@@ -31,6 +31,10 @@ footer {
             color: white;
             text-decoration: none;
         }
+
+        a:hover {
+            color: #7000ff;
+        }
     }
 }
 
