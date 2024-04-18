@@ -3,6 +3,13 @@ import './Footer.css';
 export default function Footer() {
     return (
         <footer>
+            <div className="right-container">
+                <ul>
+                    <li>Cookie Policy</li>
+                    <li>Privacy Policy</li>
+                    <li>Do Not Sell My Info</li>
+                </ul>
+            </div>
             <div className="social-links">
                 <a href="https://www.linkedin.com/company/spacelab-space/" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin fa-2x"></i>

@@ -3,19 +3,41 @@ footer {
     left: 0;
     bottom: 0; */
     width: 100%;
-    background-color: #000; 
+    background-color: #000;
     color: rgba(228, 228, 228, 1);
     text-align: center;
-    padding: 20px 0; 
+    padding: 20px 0;
+}
+
+.right-container {
+    ul {
+        list-style: none;
+        text-transform: uppercase;
+        text-align: right;
+        margin-right: 20px;
+
+        @media (min-width: 766px) {
+            text-align: right;
+            padding-left: 3.1rem;
+        }
+
+        li {
+            line-height: 2.2rem;
+            letter-spacing: 2px;
+        }
+    }
 }
 
 .social-links {
-    margin-bottom: .5rem; /* spacing between social links and copyright */
+    margin-bottom: .5rem;
+    /* spacing between social links and copyright */
 }
 
 .social-links a {
-    color: rgba(255, 255, 255, 0.8); /* icon color */
-    margin: 0 15px; /* spacing between icons */
+    color: rgba(255, 255, 255, 0.8);
+    /* icon color */
+    margin: 0 15px;
+    /* spacing between icons */
     font-size: .75rem;
 }
 
