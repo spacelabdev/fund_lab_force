@@ -25,6 +25,12 @@ footer {
             line-height: 2.2rem;
             letter-spacing: 2px;
         }
+
+        a,
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
     }
 }
 

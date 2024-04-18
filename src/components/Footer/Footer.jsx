@@ -7,7 +7,13 @@ export default function Footer() {
                 <ul>
                     <li>Cookie Policy</li>
                     <li>Privacy Policy</li>
-                    <li>Do Not Sell My Info</li>
+                    <li>
+                        <a
+                            href="https://app.termly.io/notify/84244fc8-3ee5-4874-a964-b5102a61463c"
+                        >
+                            Do Not Sell My Info
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div className="social-links">
