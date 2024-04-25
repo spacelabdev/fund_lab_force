@@ -1,0 +1,218 @@
+/*--------------------GUIDELINES ------------------------
+In general, these global styles should not be modified 
+except if there is a site-wide redesign. If you need to 
+overwrite the default styles, use css selectors and a 
+custom class.
+--------------------------------------------------------*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	/*Color Palette*/
+	--neon-purple: #7000ff;
+	--black: black;
+	--dark-gray: #1c1a22;
+	--medium-gray: #282c34;
+	--light-gray: #d9d9d9;
+	--white: white;
+
+	/*Site Styles*/
+	--background: var(--dark-gray);
+	--highlight: var(--neon-purple);
+	--heading: var(--white);
+	--text: var(--light-gray);
+	--table-header: var(--medium-gray);
+	--highlight-hover: var(--neon-purple);
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within,
+html {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*------Default Headings-----------------------------------------------------------------*/
+/*      - h1: Used for page titles only in the Hero image component                      */
+/*      - h2: Used for page section titles                                               */
+/*      - h3: Used for page sub-section titles                                           */
+/*      - h4: Used for component titles                                                  */
+/*      - h5: Used for component sub-titles                                              */
+/*      NOTE: All other text should use a p element with custom styling.                 */
+/*---------------------------------------------------------------------------------------*/
+
+h1 {
+	color: white;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 8vw;
+	letter-spacing: 3px;
+
+	@media screen and (min-width: 766px) {
+		font-size: 6.25rem;
+	}
+
+	@media (min-width: 767px) and (max-width: 1023px) {
+		font-size: 4.25rem;
+	}
+}
+
+h2 {
+	font-size: 2.4em;
+	font-family: "Poppins", sans-serif;
+	color: white;
+	margin-bottom: 3rem;
+	@media (max-width: 766px) {
+		font-size: 2.5em;
+	}
+}
+
+h3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-size: 1.5em;
+	color: white;
+	margin-bottom: 3rem;
+}
+
+h4 {
+	color: white;
+	font-size: 1.5em;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 0.5rem;
+}
+
+h5 {
+	color: white;
+	font-size: 1rem;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+	font-size: 1.1rem;
+	line-height: 1.3;
+	color: var(--text);
+}
+
+/*Buttons*/
+
+button {
+	cursor: pointer;
+	display: flex;
+	padding: 15px 30px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 3px;
+	border: 2px solid var(--neon-purple);
+	background-color: var(--background);
+	color: white;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+button:hover {
+	background: var(--neon-purple);
+}
+
+/*Inputs*/
+
+input {
+	display: flex;
+	width: 100%;
+	font-size: 12px;
+	border: none;
+	box-shadow: none;
+	padding: 0.75rem 0rem;
+	border-bottom: solid white 2px;
+	background-color: transparent;
+	margin-bottom: 20px;
+	margin-right: 1px;
+	color: white;
+
+	&::placeholder {
+		letter-spacing: 1px;
+	}
+
+	@media (min-width: 766px) {
+		width: 100%;
+		font-size: 18px;
+		&::placeholder {
+			letter-spacing: 3px;
+		}
+	}
+}
+
+input:focus {
+	outline: none;
+	border-bottom: 2px solid var(--highlight);
+}
+
+.sr-only{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
