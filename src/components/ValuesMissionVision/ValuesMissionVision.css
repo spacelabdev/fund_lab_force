@@ -1,6 +1,14 @@
 .ValuesMissionVision {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-basis: auto;
     gap: 1rem;
     padding: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .ValuesMissionVision {
+        flex-direction: column;
+        width: 80%;
+        gap: 3rem;
+    }
 }
