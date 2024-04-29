@@ -1,5 +1,4 @@
 import Mission from '../../components/Mission/Mission';
-
 import './MissionPage.css';
 
 export default function MissionPage() {

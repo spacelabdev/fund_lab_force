@@ -1,0 +1,13 @@
+.SmallCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.SmallCard .sc-title {
+    font-weight: 900;
+}
+
+.SmallCard .sc-content {
+    text-wrap: balanced;
+}
