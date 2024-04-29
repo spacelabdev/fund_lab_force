@@ -1,7 +1,7 @@
 .SmallCard {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .SmallCard .sc-title {
@@ -10,4 +10,5 @@
 
 .SmallCard .sc-content {
     text-wrap: balanced;
+    font-weight: 300;
 }

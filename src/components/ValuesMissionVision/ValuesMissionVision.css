@@ -8,7 +8,7 @@
 @media screen and (max-width: 1200px) {
     .ValuesMissionVision {
         flex-direction: column;
-        width: 80%;
+        width: 85%;
         gap: 3rem;
     }
 }
