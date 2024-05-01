@@ -1,6 +1,7 @@
 // import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar';
-// import Homepage from './pages/Homepage/Homepage';
+import Homepage from './pages/Homepage/Homepage';
 import MissionPage from './pages/MissionPage/MissionPage';
 import ValuesMissionVision from './components/ValuesMissionVision/ValuesMissionVision';
 import DonateButton from './components/Buttons/DonateButton';
@@ -9,14 +10,30 @@ import './App.css';
 
 function App() {
 	return (
-		<main className='App'>
-			<Navbar />
-			{/* <Homepage /> */}
-			<MissionPage />
-			<ValuesMissionVision />
-			<DonateButton path='/donate' buttonText='Donate' />
-			<Footer />
-		</main>
+		<div className='App'>
+			<nav>
+				<Navbar />
+			</nav>
+			<main >
+				<Routes>
+					<Route 
+						path='/'
+						element={<Homepage />}
+					/>
+
+
+					{/* TODO: FIX THIS NEXT */}
+					{/* <MissionPage /> */}
+					{/* <ValuesMissionVision /> */}
+					{/* <DonateButton path='/donate' buttonText='Donate' /> */}
+
+
+				</Routes>
+			</main>
+			<footer>
+				<Footer />
+			</footer>
+		</div>
 	);
 }
 
