@@ -1,3 +1,20 @@
 .Homepage {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* This should be it's own component (this div is just temporary) */
+.Homepage .meet-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding-inline: 4rem;
+    padding-block: 2rem;
 }

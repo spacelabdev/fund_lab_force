@@ -50,7 +50,7 @@ export default function Navbar() {
             </div>
             <div className={active ? 'nav-links active' : 'nav-links'}>
                 <ul>
-                    <li>About</li>
+                    <li>Contact Us</li>
                     <li>
                         <Link 
                             className={'nav-link'} 
