@@ -11,6 +11,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(4px);
+    z-index: 200;
 }
 
 .Footer .social-links {

@@ -5,17 +5,48 @@
     display: flex;
     align-items: center;
     padding: 2rem;
-    background-image: linear-gradient(to bottom, rgba(57, 0, 82, 0.921), rgba(31, 0, 44, 0));
+    background-image: url(../images/background-hero.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    opacity: 80%;
+    filter: brightness(1);
+    transition: all 1800ms ease-out; 
 }
+
+.Hero.hero-animate {
+    background-size: 110%;
+    opacity: 100%;
+    filter: brightness(1.05);
+}
+
+.Hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.Hero::after {
+    z-index: 100;
+}
+
 
 .Hero .hero-content {
     width: 60ch;
-    /* border: 1px solid lime; */
+    position: relative;
+    z-index: 200;
 }
 
 .Hero .hero-content h1 {
     padding-top: 3rem;
     font-size: clamp(3rem, 1.75rem + 4vw, 4rem);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    position: relative;
+    z-index: 200;
 }
 
 .Hero .hero-content .hero-p-div {
@@ -26,10 +57,34 @@
     font-weight: 300;
     color: lightgrey;
     text-wrap: pretty;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    position: relative;
+    z-index: 200;
 }
 
 .Hero .construction-note {
     padding-top: 2rem;
     color: rgba(255, 200, 0, 0.75);
     font-weight: 300;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    position: relative;
+    z-index: 200;
+}
+
+@media (max-width: 760px) {
+    .Hero {
+        background-size: cover;
+        background-position: bottom center;
+        opacity: 100%;
+        filter: brightness(1.05);
+        transition: none; 
+    }
+    
+    .Hero.hero-animate {
+        background-size: cover;
+        opacity: 100%;
+        filter: brightness(1.05);
+    }
+
+    /* Leave both of these here! It keeps the background image displaying correctly on small screens */
 }

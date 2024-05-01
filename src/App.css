@@ -1,18 +1,4 @@
-body {
-    /* border: 3px solid lime; */
-}
-
 .App {
     width: 100%;
     min-height: 100%;
-    border: 3px solid red;
-}
-
-.App main { 
-
-    width: 100%;
-}
-
-.App footer {
-    width: 100%;
 }

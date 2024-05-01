@@ -1,8 +1,8 @@
 import './Hero.css'
 
-export default function Hero() {
+export default function Hero({ playAnimation }) {
     return (
-        <section className='Hero'>
+        <section className={`Hero ${playAnimation ? 'hero-animate' : ''}`}>
             <div className='hero-content'>
                 <h1>FundLab Force</h1>
                 <div className='hero-p-div'>
