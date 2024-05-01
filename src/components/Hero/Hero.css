@@ -1,10 +1,11 @@
+/* Spacing is still a bit off in large screen sizes */
+
 .Hero {
     margin-top: -3rem;
     height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 2rem;
     background-image: url(../images/background-hero.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -34,41 +35,29 @@
     z-index: 100;
 }
 
-
 .Hero .hero-content {
-    width: 60ch;
+    width: 100%;
+    padding-inline: 4rem;
     position: relative;
     z-index: 200;
-}
-
-.Hero .hero-content h1 {
-    padding-top: 3rem;
-    font-size: clamp(3rem, 1.75rem + 4vw, 4rem);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
-    position: relative;
-    z-index: 200;
-}
-
-.Hero .hero-content .hero-p-div {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-    font-size: clamp(0.95rem, 1.307rem + -0.952vw, 0.45rem);
-    font-weight: 300;
-    color: lightgrey;
-    text-wrap: pretty;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
-    position: relative;
-    z-index: 200;
+    gap: 1rem;
 }
 
-.Hero .construction-note {
-    padding-top: 2rem;
-    color: rgba(255, 200, 0, 0.75);
-    font-weight: 300;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
-    position: relative;
-    z-index: 200;
+.Hero .hero-content p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: clamp(2rem, 8vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.Hero .hero-content p .span-2 {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 800;
 }
 
 @media (max-width: 760px) {
@@ -84,6 +73,10 @@
         background-size: cover;
         opacity: 100%;
         filter: brightness(1.05);
+    }
+
+    .Hero .hero-content {
+        padding-inline: 2rem;
     }
 
     /* Leave both of these here! It keeps the background image displaying correctly on small screens */
