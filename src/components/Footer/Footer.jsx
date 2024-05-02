@@ -2,7 +2,7 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <footer>
+        <div className='Footer'>
             <div className="social-links">
                 <a href="https://www.linkedin.com/company/spacelab-space/" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin fa-2x"></i>
@@ -17,6 +17,6 @@ export default function Footer() {
             <div className="copyright">
                 © 2024 by SpaceLab FundLab
             </div>
-        </footer>
+        </div>
     )
 }

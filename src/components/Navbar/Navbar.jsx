@@ -4,6 +4,9 @@ import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import Logo from "../../../public/assets/spacelab.svg"
 import './Navbar.css'
 
+// Navbar is animated to disappear during a scroll-down action. It reappears during a scroll-up action
+// Navbar becomes a hamburger menu at 760px screen width and below
+
 export default function Navbar() {
     const { scrollY } = useScroll()
     const [hidden, setHidden] = useState(false)
@@ -47,7 +50,7 @@ export default function Navbar() {
             </div>
             <div className={active ? 'nav-links active' : 'nav-links'}>
                 <ul>
-                    <li>About</li>
+                    {/* <li>Contact Us</li> */}
                     <li>
                         <Link 
                             className={'nav-link'} 

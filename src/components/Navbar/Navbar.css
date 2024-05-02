@@ -5,8 +5,9 @@
     left: 0;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
+    z-index: 200;
 }
 
 .Navbar .nav-logo {
@@ -15,13 +16,16 @@
 }
 
 .Navbar ul {
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-inline: 1rem;
+    gap: .25rem;
 }
 
 .Navbar li {
+    height: 100%;
     display: grid;
     place-items: center;
     height: 3rem;
@@ -29,6 +33,9 @@
     list-style: none;
     cursor: pointer;
     transition: background-color 400ms ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .Navbar li:hover {

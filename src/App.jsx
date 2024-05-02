@@ -1,23 +1,28 @@
-// import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar';
-// import Homepage from './pages/Homepage/Homepage';
-import MissionPage from './pages/MissionPage/MissionPage';
-import DonateButton from './components/Buttons/DonateButton';
+import Homepage from './pages/Homepage/Homepage';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
 	return (
-		<main className='App'>
-			<Navbar />
-			{/* <Homepage /> */}
-			<MissionPage />
-			<DonateButton path='/donate' buttonText='Donate' />
-			<Footer />
-		</main>
+		<div className='App'>
+			<nav>
+				<Navbar />
+			</nav>
+			<main >
+				<Routes>
+					<Route 
+						path='/'
+						element={<Homepage />}
+					/>
+				</Routes>
+			</main>
+			<footer>
+				<Footer />
+			</footer>
+		</div>
 	);
 }
 
 export default App;
-
-// Make sections default 100vh

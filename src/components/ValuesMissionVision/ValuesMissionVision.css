@@ -1,0 +1,15 @@
+.ValuesMissionVision {
+    display: flex;
+    flex-basis: auto;
+    gap: 2rem;
+    padding-inline: 4rem;
+    padding-block: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .ValuesMissionVision {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+}

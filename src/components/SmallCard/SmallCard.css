@@ -1,0 +1,34 @@
+/* Need to set char limit on each card and add a 'read more' button at the bottom or something... way too wordy how it is now */
+
+.SmallCard {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.001));
+    padding: 2rem;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.1);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.SmallCard:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    border-radius: 20px; 
+}
+
+.SmallCard .sc-title {
+    font-weight: 900;
+}
+
+.SmallCard .sc-content {
+    text-wrap: balanced;
+    font-weight: 300;
+}
