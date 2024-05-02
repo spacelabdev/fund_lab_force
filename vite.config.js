@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
 
-  // Configure assets
-  assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg']
+  build: {
+    // Configure assets
+    assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg']
+  },
 })
