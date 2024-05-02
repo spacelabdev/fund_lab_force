@@ -4,7 +4,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-image: url(../Images/background-hero.jpg);
+
+    background-image: url(../assets/Images/background-hero.jpg);
+
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom 25% center;
