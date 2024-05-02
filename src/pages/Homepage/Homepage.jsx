@@ -20,11 +20,11 @@ export default function Homepage() {
             <DonateButton path='/donate' buttonText='Donate' />
             <ValuesMissionVision />
             <DonateButton path='/donate' buttonText='Donate' />
-            <div className="meet-div">
+            {/* <div className="meet-div">
                 <LargeCard title={'Meet The Team - Board'}/>
                 <LargeCard title={'Meet The Team - Leadership'} />
                 <LargeCard title={'Meet The Team - Scholars'} />
-            </div>
+            </div> */}
             <DonateButton path='/donate' buttonText='Donate' />
         </main>
     )
