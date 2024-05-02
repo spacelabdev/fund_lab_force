@@ -19,7 +19,7 @@ export default function Homepage() {
             <Hero playAnimation={playAnimation}/>
             <DonateButton path='/donate' buttonText='Donate' />
             <ValuesMissionVision />
-            <DonateButton path='/donate' buttonText='Donate' />
+            {/* <DonateButton path='/donate' buttonText='Donate' /> */}
             {/* <div className="meet-div">
                 <LargeCard title={'Meet The Team - Board'}/>
                 <LargeCard title={'Meet The Team - Leadership'} />
