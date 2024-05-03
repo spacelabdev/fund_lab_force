@@ -7,7 +7,7 @@
 
 ## SpaceLab's FundLab Force
 
-<a href="https://github.com/spacelabdev/spacelab-react">
+<a href="https://github.com/spacelabdev/fund_lab_force">
     <img src="public/assets/Images/banner.png">
 </a>
 </div>
