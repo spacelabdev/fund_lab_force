@@ -55,8 +55,8 @@ export default function Navbar({ setActivePage }) {
                         <NavLink 
                             className={'nav-link'} 
                             to={'/'} 
-                            isActive={(match, location) => match || location.pathname === "/"}
-                            activeClassName="active"
+                            // isActive={(match, location) => match || location.pathname === "/"}
+                            // activeClassName="active"
                             style={{textDecoration: 'none'}}
                         >
                             Home
@@ -66,8 +66,8 @@ export default function Navbar({ setActivePage }) {
                         <NavLink 
                             className={'nav-link'} 
                             to={'/mission'} 
-                            isActive={(match, location) => match || location.pathname === "/mission"}
-                            activeClassName="active"
+                            // isActive={(match, location) => match || location.pathname === "/mission"}
+                            // activeClassName="active"
                             style={{textDecoration: 'none'}}
                         >
                             Our Mission

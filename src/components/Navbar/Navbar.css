@@ -45,10 +45,12 @@
 
 .Navbar a {
     color: white;
+    opacity: 90%;
 }
 
 .Navbar a.active {
     font-weight: 900;
+    opacity: 100%;
 }
 
 .Navbar .hamburger {

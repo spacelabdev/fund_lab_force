@@ -1,0 +1,9 @@
+.ParallaxContent {
+    width: 100%;
+    /* border: 1px solid lime; */
+}
+
+.ParallaxContent .img-and-overlay {
+    position: relative;
+    height: 150vh;
+}

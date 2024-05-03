@@ -1,0 +1,12 @@
+.ParallaxImg {
+    --parallax-img-padding: 12px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - var(--parallax-img-padding) * 2);
+    position: sticky;
+    top: var(--parallax-img-padding);
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 20px;
+}
