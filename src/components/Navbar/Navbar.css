@@ -35,7 +35,7 @@
     transition: background-color 400ms ease-in-out;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .Navbar li:hover {
@@ -45,6 +45,10 @@
 
 .Navbar a {
     color: white;
+}
+
+.Navbar a.active {
+    font-weight: 900;
 }
 
 .Navbar .hamburger {

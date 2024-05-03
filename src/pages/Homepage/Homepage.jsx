@@ -11,7 +11,7 @@ export default function Homepage() {
     useEffect(() => {
         setTimeout(() => {
             setPlayAnimation(true)
-        }, 600)
+        }, 200)
     }, [])
 
     return (

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import Logo from "../../../public/assets/spacelab.svg"
 import './Navbar.css'
@@ -7,7 +7,7 @@ import './Navbar.css'
 // Navbar is animated to disappear during a scroll-down action. It reappears during a scroll-up action
 // Navbar becomes a hamburger menu at 760px screen width and below
 
-export default function Navbar() {
+export default function Navbar({ setActivePage }) {
     const { scrollY } = useScroll()
     const [hidden, setHidden] = useState(false)
     const [active, setActive] = useState(false)
@@ -52,13 +52,35 @@ export default function Navbar() {
                 <ul>
                     {/* <li>Contact Us</li> */}
                     <li>
-                        <Link 
+                        <NavLink 
+                            className={'nav-link'} 
+                            to={'/'} 
+                            isActive={(match, location) => match || location.pathname === "/"}
+                            activeClassName="active"
+                            style={{textDecoration: 'none'}}
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                            className={'nav-link'} 
+                            to={'/mission'} 
+                            isActive={(match, location) => match || location.pathname === "/mission"}
+                            activeClassName="active"
+                            style={{textDecoration: 'none'}}
+                        >
+                            Our Mission
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
                             className={'nav-link'} 
                             to={'https://www.paypal.com/donate/?hosted_button_id=PK9D4A3HEWV8C'} 
                             style={{textDecoration: 'none'}}
                         >
-								Donate
-						</Link>
+                            Donate
+						</NavLink>
                     </li>
                 </ul>
             </div>
