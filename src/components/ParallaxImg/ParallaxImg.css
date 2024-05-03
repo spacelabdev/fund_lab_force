@@ -1,5 +1,5 @@
 .ParallaxImg {
-    --parallax-img-padding: 12px;
+    --parallax-img-padding: 2rem;
     background-size: cover;
     background-position: center;
     width: 100%;

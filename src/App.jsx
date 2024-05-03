@@ -1,28 +1,19 @@
-import { useEffect, useState } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar';
 import Mission from './pages/Mission/Mission';
 import Homepage from './pages/Homepage/Homepage';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
-function App() {
-    const [activePage, setActivePage] = useState(null)
-    const location = useLocation()
+// TODO: Add page transitions
 
-    useEffect(() => {
-        const path = location.pathname
-        const pages = {
-            '/': 'homepage',
-            '/mission': 'mission'
-        }
-        setActivePage(pages[path] || null)
-    }, [location])
+
+function App() {
 
 	return (
 		<div className='App'>
 			<nav>
-				<Navbar setActivePage={setActivePage} />
+				<Navbar />
 			</nav>
 			<main >
 				<Routes>
@@ -40,7 +31,7 @@ function App() {
 				<Footer />
 			</footer>
 		</div>
-	);
+	)
 }
 
 export default App;

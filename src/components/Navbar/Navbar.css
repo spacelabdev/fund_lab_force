@@ -46,6 +46,7 @@
 .Navbar a {
     color: white;
     opacity: 90%;
+    text-decoration: none;
 }
 
 .Navbar a.active {

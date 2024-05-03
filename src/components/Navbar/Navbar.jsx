@@ -7,7 +7,7 @@ import './Navbar.css'
 // Navbar is animated to disappear during a scroll-down action. It reappears during a scroll-up action
 // Navbar becomes a hamburger menu at 760px screen width and below
 
-export default function Navbar({ setActivePage }) {
+export default function Navbar() {
     const { scrollY } = useScroll()
     const [hidden, setHidden] = useState(false)
     const [active, setActive] = useState(false)
@@ -55,9 +55,6 @@ export default function Navbar({ setActivePage }) {
                         <NavLink 
                             className={'nav-link'} 
                             to={'/'} 
-                            // isActive={(match, location) => match || location.pathname === "/"}
-                            // activeClassName="active"
-                            style={{textDecoration: 'none'}}
                         >
                             Home
                         </NavLink>
@@ -66,9 +63,6 @@ export default function Navbar({ setActivePage }) {
                         <NavLink 
                             className={'nav-link'} 
                             to={'/mission'} 
-                            // isActive={(match, location) => match || location.pathname === "/mission"}
-                            // activeClassName="active"
-                            style={{textDecoration: 'none'}}
                         >
                             Our Mission
                         </NavLink>
@@ -77,7 +71,6 @@ export default function Navbar({ setActivePage }) {
                         <NavLink 
                             className={'nav-link'} 
                             to={'https://www.paypal.com/donate/?hosted_button_id=PK9D4A3HEWV8C'} 
-                            style={{textDecoration: 'none'}}
                         >
                             Donate
 						</NavLink>
