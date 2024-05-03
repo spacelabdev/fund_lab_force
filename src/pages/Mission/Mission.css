@@ -12,3 +12,22 @@
 .Mission .parallax-container {
     width: 100%;
 }
+
+.Mission .parallax-container h2 {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    color: rgba(171, 109, 229, 0.75);
+    font-size: 2.5rem;
+}
+
+.Mission .parallax-container p {
+    font-size: 1rem;
+}
+
+.Mission .parallax-container .temp {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+}

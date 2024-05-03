@@ -1,4 +1,6 @@
 .ParallaxContent {
+    --parallax-img-padding: 12px;
+    padding-inline: var(--parallax-img-padding);
     width: 100%;
     /* border: 1px solid lime; */
 }
