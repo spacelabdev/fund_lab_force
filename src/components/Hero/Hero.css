@@ -68,7 +68,7 @@
 }
 
 .Hero .hero-content .photo-div {
-    width: 10rem;
+    /* width: 10rem; */
     aspect-ratio: 1/1;
     position: absolute;
     z-index: 300;
