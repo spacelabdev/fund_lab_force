@@ -22,39 +22,23 @@ export default function Hero({ playAnimation }) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
+    const shuffledPhotos = allPhotos.sort(() => Math.random() - 0.5)
+
     return (
         <section className={`Hero ${playAnimation ? 'hero-animate' : ''}`}>
             <div className='hero-content'>
-                {allPhotos.map((photo, index) => (
-                    <>
-                        <div
-                            key={index}
-                            className='photo-div'
-                            style={{
-                                backgroundImage: `url(${photo})`,
-                                top: `${getRandomNumber(0, 60)}%`,
-                                left: `${getRandomNumber(0, 30)}%`,
-                            }}
-                        />
-                        <div
-                            key={index}
-                            className='photo-div'
-                            style={{
-                                backgroundImage: `url(${photo})`,
-                                top: `${getRandomNumber(0, 10)}%`,
-                                right: `${getRandomNumber(0, 30)}%`,
-                            }}
-                        />
-                                                <div
-                            key={index}
-                            className='photo-div'
-                            style={{
-                                backgroundImage: `url(${photo})`,
-                                bottom: `${getRandomNumber(0, 10)}%`,
-                                right: `${getRandomNumber(0, 30)}%`,
-                            }}
-                        />
-                    </>
+                {shuffledPhotos.slice(0, 3).map((photo, index) => (
+                    <div
+                        key={index}
+                        className='photo-div'
+                        style={{
+                            backgroundImage: `url(${photo})`,
+                            top: index === 0 ? `${getRandomNumber(0, 60)}%` : index === 1 ? `${getRandomNumber(0, 10)}%` : 'auto',
+                            left: index === 0 ? `${getRandomNumber(0, 32)}%` : 'auto',
+                            right: index === 1 || index === 2 ? `${getRandomNumber(0, 32)}%` : 'auto',
+                            bottom: index === 2 ? `${getRandomNumber(0, 10)}%` : 'auto',
+                        }}
+                    />
                 ))}
             </div>
         </section>
