@@ -23,18 +23,16 @@ export default function Hero({ playAnimation }) {
 
     const shuffledPhotos = allPhotos.sort(() => Math.random() - 0.5)
 
-    const contentWidth = 30;
-
     return (
         <section className={`Hero ${playAnimation ? 'hero-animate' : ''}`}>
             <div className='hero-content'>
                 {shuffledPhotos.slice(0, 3).map((photo, index) => {
-                    const maxWidthPercentage = index === 0 ? 30 : 25; 
+                    const maxWidthPercentage = 30; 
                     let widthPercentage;
                     if (index === 0) {
-                        widthPercentage = getRandomNumber(30, maxWidthPercentage) * 1.25;
+                        widthPercentage = getRandomNumber(28, maxWidthPercentage) * 1.25;
                     } else {
-                        widthPercentage = getRandomNumber(25, maxWidthPercentage);
+                        widthPercentage = getRandomNumber(15, maxWidthPercentage);
                     }
                     return (
                         <div
@@ -42,10 +40,10 @@ export default function Hero({ playAnimation }) {
                             className='photo-div'
                             style={{
                                 backgroundImage: `url(${photo})`,
-                                top: index === 0 ? `${getRandomNumber(0, 30)}%` : index === 1 ? `${getRandomNumber(0, 10)}%` : 'auto',
-                                left: index === 0 ? `${getRandomNumber(0, 10)}%` : 'auto',
+                                top: index === 0 ? '5.5rem' : index === 1 ? `${getRandomNumber(0, 8)}%` : 'auto',
+                                left: index === 0 ? `${getRandomNumber(0, 8)}%` : 'auto',
                                 right: index === 1 || index === 2 ? `${getRandomNumber(0, 20)}%` : 'auto',
-                                bottom: index === 2 ? `${getRandomNumber(0, 10)}%` : 'auto',
+                                bottom: index === 2 ? `${getRandomNumber(0, 8)}%` : 'auto',
                                 width: `${widthPercentage}%`,
                                 // maxWidth: `${contentWidth}%`, 
                             }}
