@@ -61,16 +61,6 @@
     font-weight: 800;
 }
 
-.Hero .photo-div {
-    width: 10rem;
-    aspect-ratio: 1/1;
-    position: relative;
-    z-index: 300;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid lime;
-}
-
 @media (max-width: 880px) {
     .Hero {
         background-size: cover;
@@ -91,4 +81,3 @@
 
     /* Leave both of these here! It keeps the background image displaying correctly on small screens */
 }
-
