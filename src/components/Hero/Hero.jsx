@@ -40,9 +40,9 @@ export default function Hero({ playAnimation }) {
                             className='photo-div'
                             style={{
                                 backgroundImage: `url(${photo})`,
-                                top: index === 0 ? '5.5rem' : index === 1 ? `${getRandomNumber(0, 8)}%` : 'auto',
+                                top: index === 0 ? '1rem' : index === 1 ? `${getRandomNumber(0, 8)}%` : 'auto',
                                 left: index === 0 ? `${getRandomNumber(0, 8)}%` : 'auto',
-                                right: index === 1 || index === 2 ? `${getRandomNumber(0, 20)}%` : 'auto',
+                                right: index === 1 ? `${getRandomNumber(15, 20)}%` : index === 2 ? `${getRandomNumber(0, 5)}%` : 'auto',
                                 bottom: index === 2 ? `${getRandomNumber(0, 8)}%` : 'auto',
                                 width: `${widthPercentage}%`,
                                 // maxWidth: `${contentWidth}%`, 

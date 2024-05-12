@@ -51,6 +51,7 @@
     flex-direction: column;
     gap: 1rem;
     border: 1px solid dodgerblue;
+    overflow: hidden;
 }
 
 .Hero .hero-content p {
@@ -74,7 +75,8 @@
     z-index: 300;
     background-size: cover;
     background-position: center;
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
+    opacity: 30%;
 }
 
 @media (max-width: 880px) {
