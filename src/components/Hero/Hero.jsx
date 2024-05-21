@@ -13,7 +13,7 @@ export default function Hero() {
                     <span>OUR MISSION:</span>
                     <span> More jobs for People of Color, Women and the LGBTQ+ Communities in Astronomy, Data Science and Technology. Joi us by Donating!</span>
                 </div>
-                {/* <img src={Logo} alt="logo" className='hero-logo'/> */}
+                <img src={Logo} alt="logo" className='hero-logo'/>
             </div>
         </section>
     )
