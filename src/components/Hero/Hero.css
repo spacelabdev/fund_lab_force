@@ -4,40 +4,16 @@
     width: 100%;
     display: flex;
     align-items: center;
-
-    background-image: url(../assets/Images/background-hero.jpg);
-
-    background-size: 100%;
+    background-image: url(../assets/Images/WelcomeDonateImg.jpeg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom 25% center;
-    opacity: 80%;
-    filter: brightness(1);
-    transition: all 1800ms ease-out; 
+    background-position: center;
     margin-bottom: 1.5rem;
-}
-
-.Hero.hero-animate {
-    background-size: 110%;
-    opacity: 100%;
-    filter: brightness(1.05);
-}
-
-.Hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.Hero::after {
-    z-index: 100;
 }
 
 .Hero .hero-content {
     width: 100%;
+    height: 100%;
     padding-inline: 4rem;
     position: relative;
     z-index: 200;
@@ -47,37 +23,37 @@
     gap: 1rem;
 }
 
-.Hero .hero-content p {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: clamp(2rem, 8vw, 3rem);
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
+.Hero .hero-content .hero-logo {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1rem;
+    width: 12rem;
+}
+
+@media (max-width: 600px) {
+    .Hero .hero-content .hero-logo {
+        width: 8rem;
+    }
+}
+
+.Hero .hero-content .look-up {
+    position: absolute;
+    top: 7rem;
+    left: 1.5rem;
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 2rem); 
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.Hero .hero-content .hero-mission {
+    width: 40ch;
     text-wrap: balance;
+    position: absolute;
+    bottom: 5rem;
+    left: 1.5rem;
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 1.25rem);
+    color: rgba(255, 255, 255, 0.85);
 }
 
-.Hero .hero-content p .span-2 {
-    color: rgba(255, 255, 255, 0.95);
-    font-weight: 800;
-}
-
-@media (max-width: 880px) {
-    .Hero {
-        background-size: cover;
-        opacity: 100%;
-        filter: brightness(1.05);
-        transition: none; 
-    }
-    
-    .Hero.hero-animate {
-        background-size: cover;
-        opacity: 100%;
-        filter: brightness(1.05);
-    }
-
-    .Hero .hero-content {
-        padding-inline: 2rem;
-    }
-
-    /* Leave both of these here! It keeps the background image displaying correctly on small screens */
+.Hero .hero-content .hero-mission span:first-child {
+    font-weight: bold;
 }
