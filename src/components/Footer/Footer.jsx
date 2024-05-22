@@ -14,6 +14,11 @@ export default function Footer() {
                     <i className="fab fa-twitter fa-2x"></i>
                 </a>
             </div>
+            <div className="link-container">
+                <a href="https://spacelab.space/cookie-policy" target="_blank">
+                    Cookie Policy
+                </a>
+            </div>
             <div className="copyright">
                 © 2024 by SpaceLab FundLab
             </div>
