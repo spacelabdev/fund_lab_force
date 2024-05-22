@@ -24,6 +24,11 @@
     font-size: .75rem;
 }
 
+.link-container a{
+    color: rgba(228, 228, 228, 1);
+    text-decoration: none;
+}
+
 .Footer .copyright {
     font-size: 1rem;
 }
